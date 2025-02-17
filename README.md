@@ -50,3 +50,5 @@ Mesa(Numero, Qtd_Cadeiras)
 Utiliza(CodCliente, CodMesa)
 CodCliente referencia Cliente
 CodMesa referencia Mesa
+
+![logico](https://github.com/user-attachments/assets/6912db0e-936f-4c04-ae57-9d09cbfa3467)
