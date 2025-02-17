@@ -1,3 +1,5 @@
+-- Qual produtos da categoria Entradas
+SELECT produtocategoria.* FROM produtocategoria, categorias WHERE CategoriaId = categorias.Id AND categorias.Nome = "Entradas";
 
 -- Qual funcionário está atendendo o pedido realizado pelo cliente Marcos?
 SELECT funcionario.* FROM funcionario, cliente, pedido WHERE pedido.funcionarioId = funcionario.IdFuncionario AND cliente.cpf = pedido.clienteCpf AND cliente.nome LIKE "Marcos%";
@@ -16,3 +18,12 @@ SELECT salario FROM gerente;
 
 -- Qual o funcionario com o maior salario?
 SELECT idFuncionario, nome, salario FROM funcionario WHERE salario = (SELECT MAX(salario) FROM funcionario);
+
+-- Quantas Categorias existem?
+SELECT COUNT(id) FROM categorias;
+
+-- Quantos funcionarios o restauruante possui?
+SELECT COUNT(nome) FROM funcionario;
+
+-- Qual os gastos totais com funcionarios normais?
+SELECT SUM(Salario) FROM funcionario;
